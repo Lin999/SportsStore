@@ -17,7 +17,6 @@ namespace SportsStore.Controllers
     {
         IAuthProvider authprovider;
 
-
         public AccountController(IAuthProvider auth)
         {
             authprovider = auth;
@@ -26,6 +25,7 @@ namespace SportsStore.Controllers
         public ViewResult Login()
         {
             return View();
+
         }
         [HttpPost]
         public ActionResult Login(LoginViewModel model, string returnUrl)
